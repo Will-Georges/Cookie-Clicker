@@ -1,0 +1,300 @@
+body {
+    background-image: url('background.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  .button-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+     width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    font-family: sans-serif;
+  }
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  .modal-body {
+    padding: 2px 16px;
+  }
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  .music-holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .music-instructions {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: black;
+  }
+  .outer-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 600px;
+  }
+  .heading {
+    margin-top: 2px;
+    font-family: 'Hubballi', cursive;
+    font-size: 40px;
+    text-align: center;
+  }
+  .logo {
+    height: 140px;
+  }
+  .container {
+    display: flex;
+    height: 750px;
+    width: 1410px;
+    border: 5px solid black;
+    border-radius: 20px;
+  }
+  .button-holder {
+    background-image: url('button-background.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    border-radius: 15px 0 0 15px;
+    height: 750px;
+    width: 500px;
+  }
+  .burger-name {
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+  }
+  .burger-button {
+    width: 400px;
+    display: block;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .rotate {
+    animation: rotation 10s infinite linear;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  .burger-button:hover {
+    width: 415px;
+  }
+  .burger-button:active {
+    width: 400px;
+  }
+  .score-holder {
+    height: 750px;
+    width: 300px;
+  }
+  .ads {
+    height: 400px;
+    width: 275px;
+    background-color: black;
+    border: 3px solid #39FF14;
+    margin-top: 5px;
+    border-radius: 15px;
+  }
+  .ad-heading {
+    font-size: 15px;
+    font-family: 'Comic Neue', cursive;
+    text-align: center;
+    color: #39FF14;
+  }
+  .div-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ad-logo {
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .display-score {
+    height: 250px;
+    width: 250px;
+    border: 2px solid #39FF14;
+    background-color: black;
+    border-radius: 15px;
+  }
+  .score-center {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-top: 45%;
+    color: #39FF14;
+  }
+  .upgrade-holder {
+    width: 610px;
+    height: 750px;
+    overflow: auto;
+  }
+  .same-upgrade {
+    height: 150px;
+    width: 580px;
+    border-radius: 20px;
+    border: 4px solid black;
+    margin-top: 5px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  .same-upgrade:hover {
+    height: 160px;
+    width: 590px;
+  }
+  .one {
+    background-image: url('upgrade-1.jpeg');
+    color: white;
+  }
+  .two {
+    background-image: url('upgrade-2.jpeg');
+    color: white;
+  }
+  .three {
+    background-image: url('upgrade-3.jpeg');
+    color: black;
+  }
+  .four {
+    background-image: url('upgrade-4.jpeg');
+    color: black;
+  }
+  .five {
+    background-image: url('upgrade-5.jpeg');
+    color: white;
+  }
+  .six {
+    background-image: url('upgrade-6.jpeg');
+    color: black;
+  }
+  .seven {
+    background-image: url('upgrade-7.jpeg');
+    color: white;
+  }
+  .eight {
+    background-image: url('upgrade-8.jpeg');
+    color: black;
+  }
+  .nine {
+    background-image: url('upgrade-9.jpeg');
+    color: white;
+  }
+  .upgrade-heading-name {
+    margin-top: 2px;
+    font-family: serif;
+    font-size: 20px;
+    text-align: center;
+  }
+  .upgrade-description {
+    font-family: calibri;
+    font-size: 15px;
+    text-align: center;
+  }
+  .upgrade-cost {
+    margin-top: 8px;
+    font-family: monospace;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .collapsible {
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: orange;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+  .more-info {
+    font-family: 'Staatliches', cursive;
+  }
